@@ -7,12 +7,6 @@ class HelloForm(forms.Form):
         required=True,
         widget=forms.TextInput()
     )
-    your_place =forms.CharField(
-        label='場所',
-        max_length=20,
-        required=True,
-        widget=forms.TextInput()
-    )
 
 
 PREFECTURE＿CHOICES=(

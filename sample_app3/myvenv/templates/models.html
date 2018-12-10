@@ -8,10 +8,6 @@
     <label>{{ form.your_name.label }} {{ form.your_name }}</label><br>
     {{ form.errors.your_name }}
 
-    {{ form.errors.your_place }}
-    <label>{{ form.your_place.label }} {{ form.your_place }}</label><br>
-    {{ form.errors.your_place }}
-
     <label>{{ form.your_sex.label }} {{ form.your_sex }}</label><br>
     <input type="submit" value="送信">
     {% csrf_token %}
@@ -19,9 +15,6 @@
   <hr>
   <h2>一覧</h2>
   {% for h in hello_qs %}
-    {{ h.your_name }}
-    {{ h.your_place }}
-    <br>
-
+    {{ h.your_name }}<br>
   {% endfor %}
 {% endblock %}
