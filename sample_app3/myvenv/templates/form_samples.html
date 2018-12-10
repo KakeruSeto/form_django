@@ -1,0 +1,36 @@
+
+{% extends "base.html" %}
+
+{% block body %}
+  <form method="get" action="">
+    {{ form.income.label }}：
+    {{ form.income }}
+    <hr>
+
+    {{ form.old1.label }}：
+    {{ form.old1 }}
+  
+    {{ form.old2.label }}：
+    {{ form.old2 }}
+    <hr>
+
+    {{ form.range1.label }}：
+    {{ form.range1 }}
+
+    {{ form.range2.label }}：
+    {{ form.range2 }}
+    <hr>
+
+    {{ form.prefecture_a.label }}：
+    {{ form.prefecture_a }}
+    <hr>
+
+    {{ form.type_a.label }}：
+    {{ form.type_a }}
+    <hr>
+
+    <input type="submit" value="送信">
+
+  </form>
+
+{% endblock %}
