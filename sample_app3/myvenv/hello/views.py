@@ -4,6 +4,7 @@ from datetime import datetime
 from django.shortcuts import redirect
 from . import forms,models
 
+
 def hello_world(request):
     return HttpResponse('Hello World')
 
@@ -65,3 +66,4 @@ def hello_models(request):
         'hello_qs': models.Hello.objects.all().order_by('-id')
     }
     return render(request, 'models.html', d)
+

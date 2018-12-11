@@ -8,7 +8,6 @@ class HelloForm(forms.Form):
         widget=forms.TextInput()
     )
 
-
 PREFECTURE＿CHOICES=(
     ('tokyo','東京都'),
     ('kanagawa','神奈川県'),
