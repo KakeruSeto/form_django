@@ -39,7 +39,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'hello',
     'crud',
-    'guestboard'
+    'guestboard',
+    'matching',
 )
 
 MIDDLEWARE_CLASSES = (
